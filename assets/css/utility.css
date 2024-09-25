@@ -2,6 +2,10 @@
   min-width: 960px;
 }
 
+.text-center{
+  text-align: center;
+}
+
 /* button */
 
 .btn{
@@ -14,3 +18,4 @@
   font-size: 1.5rem;
   font-weight: var(--fw-500);
 }
+

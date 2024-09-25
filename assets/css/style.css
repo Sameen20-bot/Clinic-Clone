@@ -179,6 +179,7 @@ ion-icon {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
 }
 
 .navbar,
@@ -268,12 +269,143 @@ ion-icon {
   color: var(--black);
   min-height: 70px;
   border-radius: var(--radius-4);
-  border: 10px solid var(--light-steel-blue);
+  border: 15px solid var(--white);
 }
 
-.inp-btn{
+.inp-btn {
   position: absolute;
   right: 1%;
-  top: 10%;
+  top: 17%;
+  height: 65%;
+}
+
+/* services */
+
+.service {
+  padding: 10rem;
+}
+.service-head-blue {
+  color: var(--royal-blue-light);
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-700);
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.service-head {
+  color: var(--oxford-blue-2);
+  font-family: var(--ff-poppins);
+  line-height: 1.2;
+  font-size: 5rem;
+  padding-bottom: 7rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-areas:
+    "s1 img s4"
+    "s2 img s5"
+    "s3 img s6";
+  gap: 1.5rem;
+}
+
+.service-image {
+  grid-area: img;
+  padding: 3rem;
+}
+
+.item1 {
+  grid-area: s1;
+}
+
+.item2 {
+  grid-area: s2;
+}
+
+.item3 {
+  grid-area: s3;
+}
+
+.item4 {
+  grid-area: s4;
+}
+
+.item5 {
+  grid-area: s5;
+}
+
+.item6 {
+  grid-area: s6;
+}
+
+.service-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  min-height: 100%;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-4);
+  padding: 30px;
+  width: 90%;
+}
+
+.service-wrap img {
+  height: 50px;
+}
+
+.service-small-head {
+  color: var(--oxford-blue-2);
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.service-para {
+  line-height: 24px;
+  font-size: 1.7rem;
+}
+
+.service-image img {
   height: 80%;
+}
+
+/* about */
+
+.about {
+  padding: 3rem 19rem;
+}
+
+.about .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-wrap {
+  margin-top: 5rem;
+}
+
+.about-small-head {
+  text-transform: uppercase;
+  color: var(--royal-blue-light);
+  font-family: var(--ff-poppins);
+  font-size: 2.2rem;
+  font-weight: var(--fw-700);
+}
+
+.about-head {
+  color: var(--oxford-blue-2);
+  font-family: var(--ff-poppins);
+  line-height: 1.2;
+  font-size: 6rem;
+}
+
+.about-para {
+  margin-top: 2rem;
+  line-height: 24px;
+}
+
+.about-para2 {
+  margin: 2rem 0rem;
+  line-height: 24px;
 }
