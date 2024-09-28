@@ -415,6 +415,8 @@ ion-icon {
 .doctors .container {
   padding: 10rem 24rem;
   width: 100%;
+  margin-bottom: 5rem;
+
 }
 
 .doctor-head {
@@ -464,7 +466,7 @@ ion-icon {
   padding-bottom: 1rem;
 }
 
-.doc-head:hover{
+.doc-head:hover {
   color: var(--royal-blue-light);
   cursor: pointer;
 }
@@ -473,7 +475,7 @@ ion-icon {
   color: var(--royal-blue-light);
 }
 
-.doc:hover .doc-head{
+.doc:hover .doc-head {
   color: var(--royal-blue-light);
 }
 
@@ -493,8 +495,51 @@ ion-icon {
   transition: var(--transition);
 }
 
-.icon-doc:hover{
+.icon-doc:hover {
   color: white;
   background-color: var(--royal-blue-light);
   cursor: pointer;
+}
+
+/* banner */
+
+.banner{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.banner .container {
+  display: grid;
+  height: 55vh;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--oxford-blue-1);
+  position: relative;
+}
+
+.banner-image{
+  padding-left: 22rem;
+}
+
+.banner-image img {
+  position: absolute;
+  height: 490px;
+  top: -100px;
+}
+
+.banner-head-small {
+  color: var(--royal-blue-light);
+  font-family: var(--ff-poppins);
+  font-size: 2.2rem;
+  font-weight: var(--fw-700);
+}
+
+.banner-head-large {
+  color: var(--white);
+  font-size: 6rem;
+  margin-bottom: 2.2rem;
 }
