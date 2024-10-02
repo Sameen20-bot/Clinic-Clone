@@ -19,6 +19,7 @@
 
   .hero {
     width: 100%;
+    /* overflow: hidden; */
   }
 
   .hero .container {
@@ -26,15 +27,55 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0rem !important;
+
   }
 
   .text-wrap {
-    padding-left: 0rem;
+    padding-top: 4rem !important;
+    padding-right: 4rem !important;
+    padding-left: 4rem !important;
+    padding-bottom: 0rem !important;
     color: var(--oxford-blue-1);
   }
 
+  .large-head{
+    font-size: var(--fs-2);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding-right: 55rem;
+
+  }
+
+  .para-head{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding-right: 55rem;
+ 
+  }
+
+  .inp-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inp-btn {
+    position: relative;
+    width: 40%;
+    height: auto;
+    right: 0%;
+    border: 15px solid var(--white);
+  }
+
+  .inp-hero {
+    width: 40%;
+  }
+
   .img-hero {
-    padding: 0rem;
+    padding: 3rem!important;
+    height: 670px;
   }
 
   /* services */
@@ -52,11 +93,18 @@
 
   /* about */
 
+  
+
   .about {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .abt-img{
+    height: 400px;
+    padding-right: 10rem;
   }
 
   .about .container {
@@ -66,35 +114,54 @@
     flex-direction: column;
   }
 
-  /* banner */
-
-  .banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  .about-wrap{
+    padding-top: 3rem;
+    padding-left: 25rem;
+    padding-right: 30rem;
   }
 
+
+  /* banner */
+
   .banner .container {
-    display: flex;
+    display: grid;
+    height: 90vh;
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-content: center;
-    flex-direction: column;
   }
 
   .banner-image {
     padding-left: 0rem;
   }
 
+  .banner-image img {
+    position: absolute;
+    height: 490px;
+    top: 50px;
+  }
+  
+
   /* blog posts */
 
   .blogs {
-    padding: 10rem 0rem;
+    padding: 10rem 4rem;
   }
 
-  .blog-items {
+  .blog-head {
+    font-size: var(--fs-1);
+  }
+  
+  .blogs .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .blog-items{
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
   }
