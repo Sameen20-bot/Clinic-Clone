@@ -1,0 +1,137 @@
+@media (max-width: 531px) {
+  /* header-top */
+
+  header {
+    display: none;
+  }
+
+  /* header-bottom */
+
+  .header-bottom {
+    width: 100%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /* hero */
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .text-wrap {
+    padding-left: 0rem;
+    color: var(--oxford-blue-1);
+  }
+
+  .img-hero {
+    padding: 0rem;
+  }
+
+  /* services */
+
+  .service-image {
+    display: none;
+  }
+
+  .service-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* about */
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* banner */
+
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .banner-image {
+    padding-left: 0rem;
+  }
+
+  /* blog posts */
+
+  .blogs {
+    padding: 10rem 0rem;
+  }
+
+  .blog-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* footer */
+
+  .partitions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 3rem;
+    gap: 3rem !important;
+  }
+
+  .p2,
+  .p3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .part-1{
+    width: 100%;
+  }
+
+  .last-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .copy-right {
+    margin-left: 2rem !important;
+  }
+}

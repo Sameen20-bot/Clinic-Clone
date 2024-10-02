@@ -3,14 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clinic Site</title>
+    <title>Clinic Site - We Are Best Dental Service</title>
 
     <!-- icon -->
     <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
 
+    <!-- font-awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/utility.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +33,7 @@
 
   <body>
     <!-- navbar -->
-    <header class="head">
+    <header class="head" id="home">
       <!-- header-top -->
       <div class="top">
         <div class="container">
@@ -71,70 +81,71 @@
           </ul>
         </div>
       </div>
-
-      <!-- header-bottom -->
-      <div class="header-bottom">
-        <div class="container">
-          <a href="#" class="logo">Dentelo.</a>
-
-          <nav class="navbar">
-            <ul class="navbar-list">
-              <li>
-                <a href="#home" class="navbar-link">Home</a>
-              </li>
-
-              <li>
-                <a href="#service" class="navbar-link">Services</a>
-              </li>
-
-              <li>
-                <a href="#about" class="navbar-link">About Us</a>
-              </li>
-
-              <li>
-                <a href="#blog" class="navbar-link">Blog</a>
-              </li>
-
-              <li>
-                <a href="#" class="navbar-link">Contact</a>
-              </li>
-            </ul>
-            <a href="#" class="btn">Book appointment</a>
-          </nav>
-        </div>
-      </div>
-
-      <div
-        class="hero"
-        style="background-image: url('./assets/images/hero-bg.png"
-      >
-        <div class="container">
-          <div class="text-wrap">
-            <h4 class="small-head">Welcome To Dentelo</h4>
-            <h1 class="large-head">We Are Best Dental Service</h1>
-            <p class="para-head">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              facilis repellendus laudantium officiis id voluptate. Itaque
-              delectus autem ea similique!
-            </p>
-            <form class="inp-wrap">
-              <input
-                type="text"
-                class="inp-hero"
-                placeholder="Your Email Address"
-              />
-              <button class="btn inp-btn">GET CALL BACK</button>
-            </form>
-          </div>
-          <div class="image-hero">
-            <img src="./assets/images/hero-banner.png" alt="hero" />
-          </div>
-        </div>
-      </div>
     </header>
 
+    <!-- header-bottom -->
+    <div class="header-bottom">
+      <div class="container">
+        <a href="#" class="logo">Dentelo.</a>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#serv" class="navbar-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#about-us" class="navbar-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#home" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+          <a href="#home" class="btn">Book appointment</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="container">
+        <div class="text-wrap">
+          <h4 class="small-head">Welcome To Dentelo</h4>
+          <h1 class="large-head">We Are Best Dental Service</h1>
+          <p class="para-head">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            facilis repellendus laudantium officiis id voluptate. Itaque
+            delectus autem ea similique!
+          </p>
+          <form class="inp-wrap">
+            <input
+              type="text"
+              class="inp-hero"
+              placeholder="Your Email Address"
+            />
+            <button class="btn inp-btn">GET CALL BACK</button>
+          </form>
+        </div>
+        <div class="image-hero">
+          <img
+            src="./assets/images/hero-banner.png"
+            alt="hero"
+            class="img-hero"
+          />
+        </div>
+      </div>
+    </div>
+
     <!-- Services -->
-    <section class="service">
+    <section class="service" id="serv" class="active">
       <div class="container">
         <h4 class="service-head-blue text-center">Our Services</h4>
         <h1 class="service-head text-center">What We Provide</h1>
@@ -215,7 +226,7 @@
 
     <!-- about -->
 
-    <section class="about">
+    <section class="about" id="about-us">
       <div class="container">
         <div class="about-img">
           <img src="assets/images/about-banner.png" alt="about" />
@@ -243,7 +254,7 @@
 
     <!-- doctors post -->
 
-    <section class="doctors">
+    <section class="doctors" class="active">
       <div class="container">
         <h4 class="doctor-head text-center">Our Doctor</h4>
         <h1 class="doctor-large-head text-center">Best Expert Dentist</h1>
@@ -298,7 +309,7 @@
 
     <!-- banner -->
 
-    <section class="banner">
+    <section class="banner" class="active">
       <div class="container">
         <div class="banner-image">
           <img src="assets/images/cta-banner.png" alt="cta" />
@@ -306,14 +317,14 @@
         <div class="banner-text">
           <h4 class="banner-head-small">Book Dentail Appointment</h4>
           <h1 class="banner-head-large">We Are open And Welcoming Patients</h1>
-          <button class="btn">BOOK APPOINTMENT</button>
+          <a href="#home" class="btn banner-btn">Book appointment</a>
         </div>
       </div>
     </section>
 
     <!-- blog posts -->
 
-    <section class="blogs">
+    <section class="blogs" id="blog" class="active">
       <div class="container">
         <h4 class="small-blog-head text-center">Our Blog</h4>
         <h1 class="blog-head text-center">Latest Blog & News</h1>
@@ -394,7 +405,17 @@
       </div>
     </section>
 
-    <footer class="foot">
+    <!-- up -->
+
+    <div class="up" class="active">
+      <a href="#home"
+        ><ion-icon name="caret-up" aria-hidden="true"></ion-icon
+      ></a>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="foot" class="active">
       <div class="partitions">
         <div class="part-1">
           <h2 class="part-heading">Dentelo.</h2>
@@ -444,15 +465,15 @@
         </div>
 
         <div class="part-4">
-          <h3 class="part3-heading">Contact Us</h3>
+          <h3 class="part4-heading">Contact Us</h3>
           <div class="date-icons">
             <div class="schedule-icon">
               <ion-icon name="location-outline"></ion-icon>
             </div>
             <span class="span">
-              1247/Plot No. 39, 15th Phase,
+              1247/Plot No. 39,
               <br />
-              LHB Colony, Kanpur
+              Karachi
             </span>
           </div>
 
@@ -472,7 +493,6 @@
             >
           </div>
         </div>
-
       </div>
 
       <div class="last-part">
