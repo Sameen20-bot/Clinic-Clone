@@ -125,6 +125,8 @@ body {
   background-color: #ffffff;
   color: var(--sonic-silver);
   font-size: 1.5rem;
+  width: 100%;
+  overflow-x: hidden !important;
 }
 
 /* header */
@@ -181,7 +183,7 @@ ion-icon {
   top: 0;
   z-index: 1000;
   background-color: white;
-  box-shadow: 10px 4px 5px;
+  box-shadow: 7px 3px 3px;
   height: auto;
 }
 
@@ -539,6 +541,7 @@ ion-icon {
   cursor: pointer;
 }
 
+
 /* banner */
 
 .banner {
@@ -679,7 +682,8 @@ ion-icon {
 }
 
 
-/* up */
+/* 
+ */
 .up a{
   background-color: var(--royal-blue-light);
   color: white;
