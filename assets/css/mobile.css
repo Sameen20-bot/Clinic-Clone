@@ -1,9 +1,4 @@
-@media (max-width: 531px) {
-  /* container */
-  .container {
-    padding: 0; 
-  }
-
+@media (max-width: 631px) {
   /* header-top */
 
   header {
@@ -24,7 +19,6 @@
 
   .hero {
     width: 100%;
-    /* overflow: hidden; */
   }
 
   .hero .container {
@@ -38,7 +32,7 @@
 
   .text-wrap {
     padding-top: 4rem !important;
-    /* padding-right: 4rem !important; */
+    padding-right: 4rem !important;
     padding-left: 4rem !important;
     padding-bottom: 0rem !important;
     color: var(--oxford-blue-1);
@@ -48,26 +42,24 @@
     font-size: var(--fs-2);
     overflow-wrap: break-word;
     word-wrap: break-word;
-    /* padding-right: 55rem; */
   }
 
   .para-head {
     overflow-wrap: break-word;
     word-wrap: break-word;
-    /* padding-right: 55rem; */
   }
 
   .inp-wrap {
+    position: static;
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
   .inp-btn {
-    position: relative;
+    position: static;
     width: 90%;
     height: auto;
-    right: 0%;
     border: 15px solid var(--white);
   }
 
@@ -108,7 +100,6 @@
 
   .abt-img {
     height: 485px;
-    /* padding-right: 10rem; */
   }
 
   .about .container {
@@ -143,7 +134,243 @@
     flex-direction: column;
     height: 100%;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
+    padding-left: 0rem;
+    gap: 4rem;
+  }
+
+  .banner-image {
+    padding-left: 0rem !important;
+  }
+
+  .banner-head-small {
+    font-size: 1rem !important;
+  }
+
+  .banner-head-large {
+    font-size: 2rem !important;
+  }
+
+  .banner-btn {
+    width: 50%;
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .banner-image img {
+    position: static;
+    height: 350px;
+    padding-top: 2rem;
+  }
+
+  /* blog posts */
+
+  .blogs {
+    padding: 10rem 4rem;
+  }
+
+  .blog-head {
+    font-size: var(--fs-1);
+  }
+
+  .small-blog-head {
+    text-align: center;
+  }
+
+  .blogs .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .blog-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* footer */
+
+  .partitions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 3rem;
+    gap: 3rem !important;
+  }
+
+  .p2,
+  .p3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .part-1 {
+    width: 100%;
+  }
+
+  .last-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .copy-right {
+    margin-left: 2rem !important;
+  }
+}
+
+
+
+
+@media (max-width: 531px) {
+  /* header-top */
+
+  header {
+    display: none;
+  }
+
+  /* header-bottom */
+
+  .header-bottom {
+    width: 100%;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  /* hero */
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0rem !important;
+  }
+
+  .text-wrap {
+    padding-top: 4rem !important;
+    padding-right: 4rem !important;
+    padding-left: 4rem !important;
+    padding-bottom: 0rem !important;
+    color: var(--oxford-blue-1);
+  }
+
+  .large-head {
+    font-size: var(--fs-2);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .para-head {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .inp-wrap {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inp-btn {
+    position: static;
+    width: 90%;
+    height: auto;
+    border: 15px solid var(--white);
+  }
+
+  .inp-hero {
+    width: 90%;
+  }
+
+  .img-hero {
+    padding: 3rem !important;
+    height: 670px;
+  }
+
+  /* services */
+
+  .service-image {
+    display: none;
+  }
+
+  .service-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  /* about */
+
+  .about {
+    padding: 3rem 5rem;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .abt-img {
+    height: 485px;
+  }
+
+  .about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-wrap {
+    padding-top: 3rem;
+    width: 100%;
+  }
+
+  /* doctor post */
+
+  .doctors .container {
+    padding: 10rem 0rem;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  /* banner */
+
+  .banner {
+    overflow: hidden;
+    position: static;
+  }
+
+  .banner .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
     padding-left: 0rem;
     gap: 4rem;
   }
@@ -236,5 +463,223 @@
 
   .copy-right {
     margin-left: 2rem !important;
+  }
+}
+
+
+
+@media (max-width: 509px) {
+  .img-hero {
+    padding: 2rem !important;
+    height: 600px;
+  }
+}
+
+
+
+@media (max-width: 468px) {
+  .inp-hero {
+    padding-right: 10rem;
+  }
+}
+
+
+
+@media (max-width: 471px){
+   .about-head {
+    font-size: 5.5rem;
+    /* padding-right: 2rem; */
+  }
+}
+
+
+
+@media (max-width: 461px){
+   .about-head {
+    font-size: 5rem;
+    /* padding-right: 2rem; */
+  }
+}
+
+
+
+@media (max-width: 461px){
+  .about-head {
+    font-size: 4.5rem;
+    /* padding-right: 4rem; */
+  }
+}
+
+
+
+@media (max-width: 433px){
+  .up a{
+    bottom: 50px;
+    right: 40px;
+    padding: 1.2rem;
+    font-size: 15px;
+  }
+
+  .social-link ion-icon {
+    padding: 8px;
+    font-size: 15px;
+  }
+}
+
+
+
+@media (max-width: 423px) {
+  .img-hero {
+    padding: 1rem !important;
+    height: 550px;
+  }
+
+  .abt-img {
+    height: 400px;
+  }
+}
+
+
+
+@media (max-width: 461px){
+  .about-head {
+    font-size: 4rem;
+    /* padding-right: 4rem; */
+  }
+}
+
+
+
+@media (max-width: 408px){
+  .up a{
+    bottom: 50px;
+    right: 20px;
+    padding: 1.2rem;
+    font-size: 15px;
+  }
+
+  .social-link ion-icon {
+    padding: 8px;
+    font-size: 15px;
+  }
+}
+
+
+
+@media (max-width: 387px) {
+  .inp-hero {
+    padding-right: 1rem;
+  }
+
+  .about-small-head {
+    font-size: 1.9rem;
+  }
+
+  .about-head {
+    font-size: 3.5rem;
+    padding-right: 0rem;
+  }
+}
+
+
+
+@media (max-width: 348px){
+  .banner-head-large {
+    font-size: 1.7rem !important;
+  }
+}
+
+
+@media (max-width: 332px) {
+  .img-hero {
+    padding: 1rem !important;
+    height: 400px !important;
+  }
+
+  .abt-img {
+    height: 300px !important;
+  }
+
+  .blog-content {
+    width: 300px !important;
+  }
+}
+
+
+
+/* footer some little issue fix  */
+
+@media (max-width: 405px){
+   .social-list{
+    width: 100%;
+    padding-left: 13rem;
+   }
+}
+
+
+
+@media (max-width: 370px){
+   .social-list{
+    width: 100%;
+    padding-left: 12rem;
+   }
+
+  .up a{
+    bottom: 50px;
+    right: 40px;
+    padding: 1rem;
+    font-size: 12px;
+  }
+}
+
+
+
+@media (max-width: 367px){
+  .social-list{
+    width: 100%;
+    padding-left: 10rem;
+   }
+}
+
+
+
+/* doctor scrollbar working here */
+
+.doctors .container {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+
+@media (max-width: 631px){
+  .doctor-content {
+    background-color: var(--carolina-blue);
+    width: 330px;
+    scroll-snap-type: x mandatory;
+    overflow: auto;
+    padding: 5rem 5rem;
+    border-radius: 8px;
+  }
+
+  .doc{
+    background-color: white;
+    scroll-snap-align: center;
+    width: 300px;
+  }
+
+  ::-webkit-scrollbar{
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+    border-radius: 25px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: #6e93f7;
+    border-radius: 25px;
   }
 }
