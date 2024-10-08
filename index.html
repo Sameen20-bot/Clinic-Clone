@@ -89,32 +89,49 @@
         <a href="#" class="logo">Dentelo.</a>
 
         <nav class="navbar">
-          <ul class="navbar-list">
-            <li>
+          <!-- open sidebar -->
+          <input type="checkbox" id="sidebar-active" />
+          <label for="sidebar-active" class="open-sidebar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32"
+              viewBox="0 -960 960 960"
+              width="32"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </label>
+
+          <!-- close sidebar -->
+          <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="32"
+                viewBox="0 -960 960 960"
+                width="32"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </label>
+            <ul class="social-link">
               <a href="#home" class="navbar-link">Home</a>
-            </li>
-
-            <li>
               <a href="#serv" class="navbar-link">Services</a>
-            </li>
-
-            <li>
               <a href="#about-us" class="navbar-link">About Us</a>
-            </li>
-
-            <li>
               <a href="#blog" class="navbar-link">Blog</a>
-            </li>
-
-            <li>
               <a href="#home" class="navbar-link">Contact</a>
-            </li>
-          </ul>
+            </ul>
+          </div>
           <a href="#home" class="btn">Book appointment</a>
         </nav>
       </div>
     </div>
 
+    <!-- hero -->
     <div class="hero">
       <div class="container">
         <div class="text-wrap">
@@ -410,7 +427,7 @@
     </section>
 
     <!-- up -->
-     
+
     <div class="up" class="active">
       <a href="#home"
         ><ion-icon name="caret-up" aria-hidden="true"></ion-icon
