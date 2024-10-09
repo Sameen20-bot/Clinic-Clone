@@ -33,7 +33,7 @@
 
   <body>
     <!-- navbar -->
-    <header class="head" id="home">
+    <header class="head">
       <!-- header-top -->
       <div class="top">
         <div class="container">
@@ -104,6 +104,9 @@
             </svg>
           </label>
 
+          <!-- to close the navbar wherever clicked on the screen -->
+          <label id="overlay" for="sidebar-active"></label>
+
           <!-- close sidebar -->
           <div class="links-container">
             <label for="sidebar-active" class="close-sidebar">
@@ -126,13 +129,13 @@
               <a href="#home" class="navbar-link">Contact</a>
             </ul>
           </div>
-          <a href="#home" class="btn">Book appointment</a>
+          <a href="#home" class="btn home-btn">Book appointment</a>
         </nav>
       </div>
     </div>
 
     <!-- hero -->
-    <div class="hero">
+    <div class="hero" id="home">
       <div class="container">
         <div class="text-wrap">
           <h4 class="small-head">Welcome To Dentelo</h4>
