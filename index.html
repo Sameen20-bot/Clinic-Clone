@@ -1,566 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clinic Site - We Are Best Dental Service</title>
 
-    <!-- icon -->
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic Site - We Are Best Dental Service</title>
 
-    <!-- font-awsome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- icon -->
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
 
-    <!-- css -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/utility.css" />
-    <link rel="stylesheet" href="assets/css/mobile.css" />
+  <!-- font-awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/utility.css" />
+  <link rel="stylesheet" href="assets/css/mobile.css" />
 
-  <body>
-    <!-- navbar -->
-    <header class="head">
-      <!-- header-top -->
-      <div class="top">
-        <div class="container">
-          <ul class="contact-list">
-            <li class="contact-item">
-              <ion-icon name="mail-outline" class="icon-top"></ion-icon>
-              <a href="mailto:info@example.com" class="contact-link"
-                >info@example.com</a
-              >
-            </li>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
 
-            <li class="contact-item">
-              <ion-icon name="call-outline" class="icon-top"></ion-icon>
-
-              <a href="tel:+917052101786" class="contact-link"
-                >+92-300-101-786</a
-              >
-            </li>
-          </ul>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook" class="social-icons"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram" class="social-icons"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter" class="social-icons"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube" class="social-icons"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-
-    <!-- header-bottom -->
-    <div class="header-bottom">
+<body>
+  <!-- navbar -->
+  <header class="head">
+    <!-- header-top -->
+    <div class="top">
       <div class="container">
-        <a href="#" class="logo">Dentelo.</a>
-
-        <nav class="navbar" onclick="open()">
-          <!-- open sidebar -->
-          <!-- <input type="checkbox" id="sidebar-active" onclick="open()" /> -->
-          <div  class="open-sidebar" >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="32"
-              viewBox="0 -960 960 960"
-              width="32"
-              
-            >
-              <path
-                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-              />
-            </svg>
-          </div>
-
-          <!-- to close the navbar wherever clicked on the screen -->
-          <!-- <label id="overlay" for="sidebar-active"></label> -->
-
-          <!-- close sidebar -->
-          <div class="links-container" id="links-container">
-            <label for="sidebar-active" class="close-sidebar">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="32"
-                viewBox="0 -960 960 960"
-                width="32"
-              >
-                <path
-                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                />
-              </svg>
-            </label>
-            <ul class="social-link">
-              <a
-                href="#home"
-                class="navbar-link"
-                onclick="close()"
-                id="nav-link"
-                >Home</a
-              >
-              <a href="#serv" class="navbar-link">Services</a>
-              <a href="#about-us" class="navbar-link">About Us</a>
-              <a href="#blog" class="navbar-link">Blog</a>
-              <a href="#home" class="navbar-link">Contact</a>
-            </ul>
-          </div>
-          <a href="#home" class="btn home-btn">Book appointment</a>
-        </nav>
-      </div>
-    </div>
-
-    <!-- hero -->
-    <div class="hero" id="home">
-      <div class="container">
-        <div class="text-wrap">
-          <h4 class="small-head">Welcome To Dentelo</h4>
-          <h1 class="large-head">We Are Best Dental Service</h1>
-          <p class="para-head">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            facilis repellendus laudantium officiis id voluptate. Itaque
-            delectus autem ea similique!
-          </p>
-          <form class="inp-wrap">
-            <input
-              type="text"
-              class="inp-hero"
-              placeholder="Your Email Address"
-            />
-            <button class="btn inp-btn">GET CALL BACK</button>
-          </form>
-        </div>
-        <div class="image-hero">
-          <img
-            src="./assets/images/hero-banner.png"
-            alt="hero"
-            class="img-hero"
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- Services -->
-    <section class="service" class="active" id="serv">
-      <div class="container">
-        <h4 class="service-head-blue text-center">Our Services</h4>
-        <h1 class="service-head text-center">What We Provide</h1>
-
-        <div class="service-grid">
-          <div class="service-image">
-            <img src="assets/images/service-banner.png" alt="teeth" />
-          </div>
-
-          <div class="service-wrap item1">
-            <img src="assets/images/service-icon-1.png" alt="service" />
-            <div class="text-service">
-              <h4 class="service-small-head">Root Canal</h4>
-              <p class="service-para">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
-                nulla.
-              </p>
-            </div>
-          </div>
-
-          <div class="service-wrap item2">
-            <img src="assets/images/service-icon-2.png" alt="service" />
-            <div class="text-service">
-              <h4 class="service-small-head">Cosmetic Teeth</h4>
-              <p class="service-para">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
-                nulla.
-              </p>
-            </div>
-          </div>
-
-          <div class="service-wrap item3">
-            <img src="assets/images/service-icon-3.png" alt="service" />
-            <div class="text-service">
-              <h4 class="service-small-head">Live Advisory</h4>
-              <p class="service-para">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
-                nulla.
-              </p>
-            </div>
-          </div>
-
-          <div class="service-wrap item4">
-            <img src="assets/images/service-icon-4.png" alt="service" />
-            <div class="text-service">
-              <h4 class="service-small-head">Alignment Teeth</h4>
-              <p class="service-para">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
-                nulla.
-              </p>
-            </div>
-          </div>
-
-          <div class="service-wrap item5">
-            <img src="assets/images/service-icon-5.png" alt="service" />
-            <div class="text-service">
-              <h4 class="service-small-head">Oral Hygiene</h4>
-              <p class="service-para">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
-                nulla.
-              </p>
-            </div>
-          </div>
-
-          <div class="service-wrap item6">
-            <img src="assets/images/service-icon-6.png" alt="service" />
-            <div class="text-service">
-              <h4 class="service-small-head">Cavity Inspection</h4>
-              <p class="service-para">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
-                nulla.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- about -->
-
-    <section class="about" id="about-us">
-      <div class="container">
-        <div class="about-img">
-          <img
-            src="assets/images/about-banner.png"
-            alt="about"
-            class="abt-img"
-          />
-        </div>
-
-        <div class="about-wrap">
-          <h4 class="about-small-head">About Us</h4>
-          <h1 class="about-head">We Care For Your Dental Health</h1>
-          <p class="about-para">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
-            soluta explicabo voluptatum et quidem, beatae perferendis magni
-            corporis quod! Accusantium! Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Vitae soluta explicabo voluptatum et quidem,
-            beatae perferendis magni corporis quod! Accusantium!
-          </p>
-          <p class="about-para2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-            voluptatum, suscipit illo nam sint unde magnam odio totam quidem
-            tempore.
-          </p>
-          <button class="btn abt-btn">READ MORE</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- doctors post -->
-
-    <section class="doctors" class="active">
-      <div class="container">
-        <h4 class="doctor-head text-center">Our Doctor</h4>
-        <h1 class="doctor-large-head text-center">Best Expert Dentist</h1>
-
-        <div class="doctor-content">
-          <div class="doc">
-            <img src="assets/images/doctor-1.png" alt="doctor" />
-            <h1 class="doc-head text-center">Howard Helmes</h1>
-            <a href="#" class="link">Dentist</a>
-            <div class="icons-grid">
-              <ion-icon name="logo-facebook" class="icon-doc"></ion-icon>
-              <ion-icon name="logo-twitter" class="icon-doc"></ion-icon>
-              <ion-icon name="logo-instagram" class="icon-doc"></ion-icon>
-            </div>
-          </div>
-
-          <div class="doc">
-            <img src="assets/images/doctor-2.png" alt="doctor" />
-            <h1 class="doc-head text-center">Ella Thompson</h1>
-            <a href="#" class="link">Dentist</a>
-            <div class="icons-grid">
-              <ion-icon name="logo-facebook" class="icon-doc"></ion-icon>
-              <ion-icon name="logo-twitter" class="icon-doc"></ion-icon>
-              <ion-icon name="logo-instagram" class="icon-doc"></ion-icon>
-            </div>
-          </div>
-
-          <div class="doc">
-            <img src="assets/images/doctor-3.png" alt="doctor" />
-            <h1 class="doc-head text-center">Vincent Cooper</h1>
-            <a href="#" class="link">Dentist</a>
-            <div class="icons-grid">
-              <ion-icon name="logo-facebook" class="icon-doc"></ion-icon>
-              <ion-icon name="logo-twitter" class="icon-doc"></ion-icon>
-              <ion-icon name="logo-instagram" class="icon-doc"></ion-icon>
-            </div>
-          </div>
-
-          <div class="doc">
-            <img src="assets/images/doctor-4.png" alt="doctor" />
-            <h1 class="doc-head text-center">Danielle Bryant</h1>
-            <a href="#" class="link">Dentist</a>
-            <div class="icons-grid">
-              <ion-icon name="logo-facebook" class="icon-doc"></ion-icon>
-              <ion-icon name="logo-twitter" class="icon-doc"></ion-icon>
-              <ion-icon name="logo-instagram" class="icon-doc"></ion-icon>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- banner -->
-
-    <section class="banner" class="active">
-      <div class="container">
-        <div class="banner-image">
-          <img src="assets/images/cta-banner.png" alt="cta" />
-        </div>
-        <div class="banner-text">
-          <h4 class="banner-head-small">Book Dentail Appointment</h4>
-          <h1 class="banner-head-large">We Are open And Welcoming Patients</h1>
-          <a href="#home" class="btn banner-btn">Book appointment</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- blog posts -->
-
-    <section class="blogs" id="blog" class="active">
-      <div class="container">
-        <h4 class="small-blog-head text-center">Our Blog</h4>
-        <h1 class="blog-head text-center">Latest Blog & News</h1>
-
-        <div class="blog-items">
-          <div class="blog-content">
-            <div class="image-blog">
-              <img
-                src="assets/images/blog-1.jpg"
-                alt="blog"
-                class="blog-img"
-                width="100%"
-                height="200px"
-              />
-              <div class="date">
-                <ion-icon name="calendar-outline"></ion-icon>29th September 2024
-              </div>
-            </div>
-
-            <div class="text-blog-wrap">
-              <h3 class="blog-post-head">Lorem ipsum dolor sit amet</h3>
-              <p class="blog-para">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptatem dicta culpa recusandae saepe animi deserunt.
-              </p>
-              <a href="#" class="read">READ MORE</a>
-            </div>
-          </div>
-
-          <div class="blog-content">
-            <div class="image-blog">
-              <img
-                src="assets/images/blog-2.jpg"
-                alt="blog"
-                class="blog-img"
-                width="100%"
-                height="200px"
-              />
-              <div class="date">
-                <ion-icon name="calendar-outline"></ion-icon>29th September 2024
-              </div>
-            </div>
-
-            <div class="text-blog-wrap">
-              <h3 class="blog-post-head">Lorem ipsum dolor sit amet</h3>
-              <p class="blog-para">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptatem dicta culpa recusandae saepe animi deserunt.
-              </p>
-              <a href="#" class="read">READ MORE</a>
-            </div>
-          </div>
-
-          <div class="blog-content">
-            <div class="image-blog">
-              <img
-                src="assets/images/blog-3.jpg"
-                alt="blog"
-                class="blog-img"
-                width="100%"
-                height="200px"
-              />
-              <div class="date">
-                <ion-icon name="calendar-outline"></ion-icon>29th September 2024
-              </div>
-            </div>
-
-            <div class="text-blog-wrap">
-              <h3 class="blog-post-head">Lorem ipsum dolor sit amet</h3>
-              <p class="blog-para">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptatem dicta culpa recusandae saepe animi deserunt.
-              </p>
-              <a href="#" class="read">READ MORE</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- up -->
-
-    <div class="up" class="active">
-      <a href="#home"
-        ><ion-icon name="caret-up" aria-hidden="true"></ion-icon
-      ></a>
-    </div>
-
-    <!-- footer -->
-
-    <footer class="foot" class="active">
-      <div class="partitions">
-        <div class="part-1">
-          <h2 class="part-heading">Dentelo.</h2>
-          <p class="part-para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            laudantium nam, quia asperiores alias odit provident autem officia
-            ipsam voluptates?
-          </p>
-
-          <div class="date-icons">
-            <div class="schedule-icon">
-              <ion-icon name="time-outline"></ion-icon>
-            </div>
-            <span class="span">
-              Monday - Saturday:<br />
-              9:00am - 10:00Pm
-            </span>
-          </div>
-        </div>
-
-        <div class="part-2">
-          <h3 class="part2-heading">Other Links</h3>
-          <li class="p2"><ion-icon name="add-outline"></ion-icon>Home</li>
-          <li class="p2"><ion-icon name="add-outline"></ion-icon>About Us</li>
-          <li class="p2"><ion-icon name="add-outline"></ion-icon>Services</li>
-          <li class="p2"><ion-icon name="add-outline"></ion-icon>Project</li>
-          <li class="p2"><ion-icon name="add-outline"></ion-icon>Our Team</li>
-        </div>
-
-        <div class="part-3">
-          <h3 class="part3-heading">Over Services</h3>
-          <li class="p3">
-            <ion-icon name="add-outline"></ion-icon><span>Root Canal</span>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <ion-icon name="mail-outline" class="icon-top"></ion-icon>
+            <a href="mailto:info@example.com" class="contact-link">info@example.com</a>
           </li>
-          <li class="p3">
-            <ion-icon name="add-outline"></ion-icon><span>Alignment Teeth</span>
-          </li>
-          <li class="p3">
-            <ion-icon name="add-outline"></ion-icon><span>Cosmetic Teeth</span>
-          </li>
-          <li class="p3">
-            <ion-icon name="add-outline"></ion-icon><span>Oral Hygiene</span>
-          </li>
-          <li class="p3">
-            <ion-icon name="add-outline"></ion-icon><span>Live Advisory</span>
-          </li>
-        </div>
 
-        <div class="part-4">
-          <h3 class="part4-heading">Contact Us</h3>
-          <div class="date-icons">
-            <div class="schedule-icon">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <span class="span">
-              1247/Plot No. 39,
-              <br />
-              Karachi
-            </span>
-          </div>
+          <li class="contact-item">
+            <ion-icon name="call-outline" class="icon-top"></ion-icon>
 
-          <div class="date-icons">
-            <div class="schedule-icon">
-              <ion-icon name="call-outline"></ion-icon>
-            </div>
-            <span class="span"> +92 345 9448484 </span>
-          </div>
-
-          <div class="date-icons">
-            <div class="schedule-icon">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <a href="mailto:info@example.com" class="contact-link"
-              >info@example.com</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="last-part">
-        <p class="copy-right">© 2024 All Rights Reserved by Clinic-Copy</p>
+            <a href="tel:+917052101786" class="contact-link">+92-300-101-786</a>
+          </li>
+        </ul>
 
         <ul class="social-list">
-          <li>
+          <li class="social-item">
             <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-facebook" class="social-icons"></ion-icon>
             </a>
           </li>
 
-          <li>
+          <li class="social-item">
             <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-instagram" class="social-icons"></ion-icon>
             </a>
           </li>
 
-          <li>
+          <li class="social-item">
             <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-twitter" class="social-icons"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube" class="social-icons"></ion-icon>
             </a>
           </li>
         </ul>
       </div>
-    </footer>
+    </div>
+  </header>
 
-    <!-- ionicon -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+  <!-- header-bottom -->
+  <div class="header-bottom">
+    <div class="container">
+      <a href="#" class="logo">Dentelo.</a>
 
-    <script src="assets/navbar.js"></script>
-  </body>
+      <nav class="navbar">
+        <!-- open sidebar -->
+        <!-- <input type="checkbox" id="sidebar-active" onclick="open()" /> -->
+        <div class="open-sidebar" onclick="myOpen()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg>
+        </div>
+
+        <!-- to close the navbar wherever clicked on the screen -->
+        <!-- <label id="overlay" for="sidebar-active"></label> -->
+
+        <!-- close sidebar -->
+        <div class="links-container" id="links-container">
+          <div class="close-sidebar" onclick="myClose()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+          </div>
+          <ul class="social-link">
+            <a href="#home" class="navbar-link" onclick="myClose()" id="nav-link">Home</a>
+            <a href="#serv" class="navbar-link" onclick="myClose()">Services</a>
+            <a href="#about-us" class="navbar-link" onclick="myClose()">About Us</a>
+            <a href="#blog" class="navbar-link" onclick="myClose()">Blog</a>
+            <a href="#home" class="navbar-link" onclick="myClose()">Contact</a>
+          </ul>
+        </div>
+        <a href="#home" class="btn home-btn">Book appointment</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- hero -->
+  <div class="hero" id="home">
+    <div class="container">
+      <div class="text-wrap">
+        <h4 class="small-head">Welcome To Dentelo</h4>
+        <h1 class="large-head">We Are Best Dental Service</h1>
+        <p class="para-head">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          facilis repellendus laudantium officiis id voluptate. Itaque
+          delectus autem ea similique!
+        </p>
+        <form class="inp-wrap">
+          <input type="text" class="inp-hero" placeholder="Your Email Address" />
+          <button class="btn inp-btn">GET CALL BACK</button>
+        </form>
+      </div>
+      <div class="image-hero">
+        <img src="./assets/images/hero-banner.png" alt="hero" class="img-hero" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="service" class="active" id="serv">
+    <div class="container">
+      <h4 class="service-head-blue text-center">Our Services</h4>
+      <h1 class="service-head text-center">What We Provide</h1>
+
+      <div class="service-grid">
+        <div class="service-image">
+          <img src="assets/images/service-banner.png" alt="teeth" />
+        </div>
+
+        <div class="service-wrap item1">
+          <img src="assets/images/service-icon-1.png" alt="service" />
+          <div class="text-service">
+            <h4 class="service-small-head">Root Canal</h4>
+            <p class="service-para">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
+              nulla.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-wrap item2">
+          <img src="assets/images/service-icon-2.png" alt="service" />
+          <div class="text-service">
+            <h4 class="service-small-head">Cosmetic Teeth</h4>
+            <p class="service-para">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
+              nulla.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-wrap item3">
+          <img src="assets/images/service-icon-3.png" alt="service" />
+          <div class="text-service">
+            <h4 class="service-small-head">Live Advisory</h4>
+            <p class="service-para">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
+              nulla.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-wrap item4">
+          <img src="assets/images/service-icon-4.png" alt="service" />
+          <div class="text-service">
+            <h4 class="service-small-head">Alignment Teeth</h4>
+            <p class="service-para">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
+              nulla.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-wrap item5">
+          <img src="assets/images/service-icon-5.png" alt="service" />
+          <div class="text-service">
+            <h4 class="service-small-head">Oral Hygiene</h4>
+            <p class="service-para">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
+              nulla.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-wrap item6">
+          <img src="assets/images/service-icon-6.png" alt="service" />
+          <div class="text-service">
+            <h4 class="service-small-head">Cavity Inspection</h4>
+            <p class="service-para">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
+              nulla.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about -->
+
+  <section class="about" id="about-us">
+    <div class="container">
+      <div class="about-img">
+        <img src="assets/images/about-banner.png" alt="about" class="abt-img" />
+      </div>
+
+      <div class="about-wrap">
+        <h4 class="about-small-head">About Us</h4>
+        <h1 class="about-head">We Care For Your Dental Health</h1>
+        <p class="about-para">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+          soluta explicabo voluptatum et quidem, beatae perferendis magni
+          corporis quod! Accusantium! Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Vitae soluta explicabo voluptatum et quidem,
+          beatae perferendis magni corporis quod! Accusantium!
+        </p>
+        <p class="about-para2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          voluptatum, suscipit illo nam sint unde magnam odio totam quidem
+          tempore.
+        </p>
+        <button class="btn abt-btn">READ MORE</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- doctors post -->
+
+  <section class="doctors" class="active">
+    <div class="container">
+      <h4 class="doctor-head text-center">Our Doctor</h4>
+      <h1 class="doctor-large-head text-center">Best Expert Dentist</h1>
+
+      <div class="doctor-content">
+        <div class="doc">
+          <img src="assets/images/doctor-1.png" alt="doctor" />
+          <h1 class="doc-head text-center">Howard Helmes</h1>
+          <a href="#" class="link">Dentist</a>
+          <div class="icons-grid">
+            <ion-icon name="logo-facebook" class="icon-doc"></ion-icon>
+            <ion-icon name="logo-twitter" class="icon-doc"></ion-icon>
+            <ion-icon name="logo-instagram" class="icon-doc"></ion-icon>
+          </div>
+        </div>
+
+        <div class="doc">
+          <img src="assets/images/doctor-2.png" alt="doctor" />
+          <h1 class="doc-head text-center">Ella Thompson</h1>
+          <a href="#" class="link">Dentist</a>
+          <div class="icons-grid">
+            <ion-icon name="logo-facebook" class="icon-doc"></ion-icon>
+            <ion-icon name="logo-twitter" class="icon-doc"></ion-icon>
+            <ion-icon name="logo-instagram" class="icon-doc"></ion-icon>
+          </div>
+        </div>
+
+        <div class="doc">
+          <img src="assets/images/doctor-3.png" alt="doctor" />
+          <h1 class="doc-head text-center">Vincent Cooper</h1>
+          <a href="#" class="link">Dentist</a>
+          <div class="icons-grid">
+            <ion-icon name="logo-facebook" class="icon-doc"></ion-icon>
+            <ion-icon name="logo-twitter" class="icon-doc"></ion-icon>
+            <ion-icon name="logo-instagram" class="icon-doc"></ion-icon>
+          </div>
+        </div>
+
+        <div class="doc">
+          <img src="assets/images/doctor-4.png" alt="doctor" />
+          <h1 class="doc-head text-center">Danielle Bryant</h1>
+          <a href="#" class="link">Dentist</a>
+          <div class="icons-grid">
+            <ion-icon name="logo-facebook" class="icon-doc"></ion-icon>
+            <ion-icon name="logo-twitter" class="icon-doc"></ion-icon>
+            <ion-icon name="logo-instagram" class="icon-doc"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- banner -->
+
+  <section class="banner" class="active">
+    <div class="container">
+      <div class="banner-image">
+        <img src="assets/images/cta-banner.png" alt="cta" />
+      </div>
+      <div class="banner-text">
+        <h4 class="banner-head-small">Book Dentail Appointment</h4>
+        <h1 class="banner-head-large">We Are open And Welcoming Patients</h1>
+        <a href="#home" class="btn banner-btn">Book appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- blog posts -->
+
+  <section class="blogs" id="blog" class="active">
+    <div class="container">
+      <h4 class="small-blog-head text-center">Our Blog</h4>
+      <h1 class="blog-head text-center">Latest Blog & News</h1>
+
+      <div class="blog-items">
+        <div class="blog-content">
+          <div class="image-blog">
+            <img src="assets/images/blog-1.jpg" alt="blog" class="blog-img" width="100%" height="200px" />
+            <div class="date">
+              <ion-icon name="calendar-outline"></ion-icon>29th September 2024
+            </div>
+          </div>
+
+          <div class="text-blog-wrap">
+            <h3 class="blog-post-head">Lorem ipsum dolor sit amet</h3>
+            <p class="blog-para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem dicta culpa recusandae saepe animi deserunt.
+            </p>
+            <a href="#" class="read">READ MORE</a>
+          </div>
+        </div>
+
+        <div class="blog-content">
+          <div class="image-blog">
+            <img src="assets/images/blog-2.jpg" alt="blog" class="blog-img" width="100%" height="200px" />
+            <div class="date">
+              <ion-icon name="calendar-outline"></ion-icon>29th September 2024
+            </div>
+          </div>
+
+          <div class="text-blog-wrap">
+            <h3 class="blog-post-head">Lorem ipsum dolor sit amet</h3>
+            <p class="blog-para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem dicta culpa recusandae saepe animi deserunt.
+            </p>
+            <a href="#" class="read">READ MORE</a>
+          </div>
+        </div>
+
+        <div class="blog-content">
+          <div class="image-blog">
+            <img src="assets/images/blog-3.jpg" alt="blog" class="blog-img" width="100%" height="200px" />
+            <div class="date">
+              <ion-icon name="calendar-outline"></ion-icon>29th September 2024
+            </div>
+          </div>
+
+          <div class="text-blog-wrap">
+            <h3 class="blog-post-head">Lorem ipsum dolor sit amet</h3>
+            <p class="blog-para">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatem dicta culpa recusandae saepe animi deserunt.
+            </p>
+            <a href="#" class="read">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- up -->
+
+  <div class="up" class="active">
+    <a href="#home"><ion-icon name="caret-up" aria-hidden="true"></ion-icon></a>
+  </div>
+
+  <!-- footer -->
+
+  <footer class="foot" class="active">
+    <div class="partitions">
+      <div class="part-1">
+        <h2 class="part-heading">Dentelo.</h2>
+        <p class="part-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          laudantium nam, quia asperiores alias odit provident autem officia
+          ipsam voluptates?
+        </p>
+
+        <div class="date-icons">
+          <div class="schedule-icon">
+            <ion-icon name="time-outline"></ion-icon>
+          </div>
+          <span class="span">
+            Monday - Saturday:<br />
+            9:00am - 10:00Pm
+          </span>
+        </div>
+      </div>
+
+      <div class="part-2">
+        <h3 class="part2-heading">Other Links</h3>
+        <li class="p2"><ion-icon name="add-outline"></ion-icon>Home</li>
+        <li class="p2"><ion-icon name="add-outline"></ion-icon>About Us</li>
+        <li class="p2"><ion-icon name="add-outline"></ion-icon>Services</li>
+        <li class="p2"><ion-icon name="add-outline"></ion-icon>Project</li>
+        <li class="p2"><ion-icon name="add-outline"></ion-icon>Our Team</li>
+      </div>
+
+      <div class="part-3">
+        <h3 class="part3-heading">Over Services</h3>
+        <li class="p3">
+          <ion-icon name="add-outline"></ion-icon><span>Root Canal</span>
+        </li>
+        <li class="p3">
+          <ion-icon name="add-outline"></ion-icon><span>Alignment Teeth</span>
+        </li>
+        <li class="p3">
+          <ion-icon name="add-outline"></ion-icon><span>Cosmetic Teeth</span>
+        </li>
+        <li class="p3">
+          <ion-icon name="add-outline"></ion-icon><span>Oral Hygiene</span>
+        </li>
+        <li class="p3">
+          <ion-icon name="add-outline"></ion-icon><span>Live Advisory</span>
+        </li>
+      </div>
+
+      <div class="part-4">
+        <h3 class="part4-heading">Contact Us</h3>
+        <div class="date-icons">
+          <div class="schedule-icon">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+          <span class="span">
+            1247/Plot No. 39,
+            <br />
+            Karachi
+          </span>
+        </div>
+
+        <div class="date-icons">
+          <div class="schedule-icon">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+          <span class="span"> +92 345 9448484 </span>
+        </div>
+
+        <div class="date-icons">
+          <div class="schedule-icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <a href="mailto:info@example.com" class="contact-link">info@example.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="last-part">
+      <p class="copy-right">© 2024 All Rights Reserved by Clinic-Copy</p>
+
+      <ul class="social-list">
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ionicon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="assets/navbar.js"></script>
+</body>
+
 </html>

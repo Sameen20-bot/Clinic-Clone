@@ -684,8 +684,6 @@
     transition: 0.75s ease-out;
   }
 
-
-
   .social-link {
     display: flex;
     flex-direction: column !important;
@@ -703,11 +701,11 @@
     margin: 5rem;
   }
 
-  .close{
+  .close {
     right: -100%;
   }
 
-  .open{
+  .open {
     right: 0;
   }
 
@@ -746,7 +744,6 @@
   /* #sidebar-active:checked ~ .links-container {
     right: 0;
   } */
-
 
   #sidebar-active:checked ~ #overlay {
     height: 100%;
