@@ -123,6 +123,22 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 10rem; 
+}
+
+.service{
+  scroll-margin-top: 15rem !important; 
+}
+
+.about{
+  scroll-margin-top: 15rem !important; 
+}
+
+.hero{
+  scroll-margin-top: 7rem !important; 
+}
+
 body {
   background-color: #ffffff;
   color: var(--sonic-silver);
@@ -200,7 +216,7 @@ ion-icon {
   top: 0;
   z-index: 1000;
   background-color: white;
-  box-shadow: 7px 3px 3px;
+  box-shadow: var(--shadow-2);
   height: auto;
   width: 100%;
 }
